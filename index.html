@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Customização de Carro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Customização de Carro</h2>
+        <div class="category">
+            <h3>Itens de Estilo:</h3>
+            <label><input type="checkbox" id="aerofolio" onchange="toggleCheckbox('aerofolio', 10000)"> Aerofólio (+10 mil)</label><br>
+            <label><input type="checkbox" id="paraDianteiro" onchange="toggleCheckbox('paraDianteiro', 10000)"> Para-choque Dianteiro (+10 mil)</label><br>
+            <label><input type="checkbox" id="paraTraseiro" onchange="toggleCheckbox('paraTraseiro', 10000)"> Para-choque Traseiro (+10 mil)</label><br>
+            <label><input type="checkbox" id="saias" onchange="toggleCheckbox('saias', 10000)"> Saias (+10 mil)</label><br>
+            <label><input type="checkbox" id="escapamento" onchange="toggleCheckbox('escapamento', 10000)"> Escapamento (+10 mil)</label><br>
+            <label><input type="checkbox" id="chassi" onchange="toggleCheckbox('chassi', 10000)"> Chassi (+10 mil)</label><br>
+            <label><input type="checkbox" id="gaiola" onchange="toggleCheckbox('gaiola', 10000)"> Gaiola (+10 mil)</label><br>
+            <label><input type="checkbox" id="grelha" onchange="toggleCheckbox('grelha', 10000)"> Grelha (+10 mil)</label><br>
+            <label><input type="checkbox" id="capo" onchange="toggleCheckbox('capo', 10000)"> Capô (+10 mil)</label><br>
+            <label><input type="checkbox" id="paraLama" onchange="toggleCheckbox('paraLama', 10000)"> Para-Lama (+10 mil)</label><br>
+            <label><input type="checkbox" id="teto" onchange="toggleCheckbox('teto', 10000)"> Teto (+10 mil)</label><br>
+            <label><input type="checkbox" id="decal" onchange="toggleCheckbox('decal', 10000)"> Decal (+10 mil)</label><br>
+            <label><input type="checkbox" id="rodas" onchange="toggleCheckbox('rodas', 10000)"> Rodas (+10 mil)</label><br>
+            <label><input type="checkbox" id="pinturaPrimaria" onchange="toggleCheckbox('pinturaPrimaria', 10000)"> Pintura Primária (+10 mil)</label><br>
+            <label><input type="checkbox" id="pinturaSecundaria" onchange="toggleCheckbox('pinturaSecundaria', 10000)"> Pintura Secundária (+10 mil)</label><br>
+            <label><input type="checkbox" id="insulfilm" onchange="toggleCheckbox('insulfilm', 10000)"> Insulfilm (+10 mil)</label><br>
+            <label><input type="checkbox" id="instalarNeon" onchange="toggleCheckbox('instalarNeon', 25000)"> Instalar Neon (+25 mil)</label><br>
+            <label><input type="checkbox" id="instalarXenon" onchange="toggleCheckbox('instalarXenon', 25000)"> Instalar Xenon (+25 mil)</label><br>
+            <label><input type="checkbox" id="trocarCorNeon" onchange="toggleCheckbox('trocarCorNeon', 15000)"> Trocar Cor Neon (+15 mil)</label><br>
+            <label><input type="checkbox" id="trocarCorXenon" onchange="toggleCheckbox('trocarCorXenon', 15000)"> Trocar Cor Xenon (+15 mil)</label><br>
+            <br>
+        </div>
+
+        <div class="category">
+            <h3>Itens de Blindagem:</h3>
+            <label><input type="checkbox" id="blindagemPneu" onchange="toggleCheckbox('blindagemPneu', 900000)"> Blindagem Pneu (900 mil)</label><br>
+            <label><input type="checkbox" id="blindagem" onchange="toggleCheckbox('blindagem', 600000)"> Blindagem (600 mil)</label><br>
+        </div>
+
+        <div class="category">
+            <h3>Outros Serviços:</h3>
+            <label><input type="checkbox" id="fullTuning" onchange="toggleCheckbox('fullTuning', 350000)"> Full Tuning (350 mil)</label><br>
+            <label><input type="checkbox" id="nitroKit" onchange="toggleCheckbox('nitroKit', 1000000)"> Nitro + Kit Nitro (1 milhão)</label><br>
+        </div>
+
+        <div class="total">
+            <h3>Total:</h3>
+            <p id="total">0</p>
+            <button onclick="clearAll()">Limpar Tudo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
